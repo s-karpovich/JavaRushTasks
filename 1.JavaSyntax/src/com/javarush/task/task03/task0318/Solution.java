@@ -8,11 +8,12 @@ import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        BufferedReader bf =new BufferedReader(new InputStreamReader(System.in));
-        String term = bf.readLine();
-        String name = bf.readLine();
-        int termInt=Integer.parseInt(term);
-        System.out.println(name + " захватит мир через " + termInt + " лет. Му-ха-ха!");
         //напишите тут ваш код
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String term=bufferedReader.readLine();
+        //int termInt=Integer.parseInt(term);
+        String name=bufferedReader.readLine();
+
+        System.out.println(name + "захватит мир через " + term + " лет. Му-ха-ха!");
     }
 }

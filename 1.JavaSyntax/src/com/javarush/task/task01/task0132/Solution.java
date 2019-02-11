@@ -9,20 +9,19 @@ public class Solution {
         System.out.println(sumDigitsInNumber(546));
     }
 
-    private static int sumDigitsInNumber(int number) {
-       int thirdNum=number/100;
-       int secondNum = (number%100)/10;
-       int firstNum = (number%100)%10;
-
-//        String s = Integer.toString(number);
-//        char s1 = s.charAt(0);
-//        char s2 = s.charAt(1);
-//        char s3 = s.charAt(2);
-//        int ns1 = Character.getNumericValue(s1);
-//        int ns2 = Character.getNumericValue(s2);
-//        int ns3 = Character.getNumericValue(s3);
-//
-
-       return thirdNum + secondNum + firstNum;
-    }  
+    public static int sumDigitsInNumber(int number) {
+        //напишите тут ваш код
+        int sum = 0;
+        for (int i = 0; i <3 ; i++) {
+            sum=sum+number%10;
+            number=number/10;
+        }
+        return sum;
+// Old
+//        int thirdNum=number/100;
+//        //int second=(number-thirdNum*100)/10;
+//        int secondNum = (number%100)/10;
+//        int firstNum = (number%100)%10;
+//        return thirdNum + secondNum + firstNum;
+    }
 }
