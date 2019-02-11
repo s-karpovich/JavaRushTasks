@@ -13,9 +13,9 @@ public class Solution {
     }
 
     public static class Person {
-        int age = 20;
+        public int age = 20;
 
-        void adjustAge(int age) {
+        public void adjustAge(int age) {
             this.age = age + 20;
             System.out.println("Age in adjustAge() is: " + this.age);
         }

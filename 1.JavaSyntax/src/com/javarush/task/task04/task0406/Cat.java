@@ -8,12 +8,16 @@ public class Cat {
     private String fullName;
 
     public void setName(String firstName, String lastName) {
-        fullName = firstName + " " + lastName;
-        this.fullName = fullName;
+        String fullName = firstName + " " + lastName;
+
         //напишите тут ваш код
+        this.fullName=fullName;
     }
 
     public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.setName("Кот", "Матроскин");
+        System.out.println(cat.fullName);
 
     }
 }

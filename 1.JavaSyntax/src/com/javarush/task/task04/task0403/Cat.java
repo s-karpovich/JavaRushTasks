@@ -7,13 +7,13 @@ package com.javarush.task.task04.task0403;
 public class Cat {
     private String name = "безымянный кот";
 
-    private void setName(String name) {
-    this.name = name;
+    public void setName(String name) {
+        //напишите тут ваш код
+        this.name=name;
     }
 
     public static void main(String[] args) {
         Cat cat = new Cat();
-        System.out.println(cat.name);
         cat.setName("Жужик");
         System.out.println(cat.name);
     }

@@ -13,12 +13,11 @@ public class Solution {
     }
 
     public static class Apple {
-        static int applesPrice = 0;
+        public static int applesPrice = 0;
 
-       static void addPrice(int applesPrice) {
-            applesPrice = Apple.applesPrice + applesPrice;
-
-            Apple.applesPrice += applesPrice;
+        public static void addPrice(int applesPrice) {
+            //напишите тут ваш код
+            Apple.applesPrice=Apple.applesPrice+applesPrice;
         }
     }
 }
