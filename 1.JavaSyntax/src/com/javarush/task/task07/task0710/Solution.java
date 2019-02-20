@@ -22,6 +22,5 @@ public class Solution {
         for (String s: list) {
             System.out.println(s);
         }
-
     }
 }
