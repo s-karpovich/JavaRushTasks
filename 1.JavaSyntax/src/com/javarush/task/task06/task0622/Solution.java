@@ -2,6 +2,7 @@ package com.javarush.task.task06.task0622;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 /* 
 Числа по возрастанию
@@ -12,19 +13,27 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         //напишите тут ваш код
-        int a = Integer.parseInt(reader.readLine());
-        int b = Integer.parseInt(reader.readLine());
-        int c = Integer.parseInt(reader.readLine());
-        int d = Integer.parseInt(reader.readLine());
-        int e = Integer.parseInt(reader.readLine());
+        // Заполнение массива с клавиатуры
+        int[] array = new int[5];
+        for (int i = 0; i <5 ; i++) {
+            array[i] = Integer.parseInt(reader.readLine());
+        }
+
+        // Сортировка элементов массива пузырьком по возрастанию
+        for (int i = array.length-1; i > 0 ; i--) {
+            for (int j = 0; j < i ; j++) {
+                if (array[j]>array[j+1]) {
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
+            }
+        }
+        // Вывод элементов массива с новой строки
+        for (int i = 0; i <array.length ; i++) {
+            System.out.println(array[i]);
+        }
     }
 
-    public static void findMin(int a, int b, int c, int d, int e) {
-     if (a<b) {swapWithMin (a, b);}
-    }
-
-    public static void swapWithMin(int one, int two) {
-
-    }
 }
 
