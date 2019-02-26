@@ -1,6 +1,7 @@
 package com.javarush.task.task08.task0817;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /* 
@@ -26,17 +27,32 @@ public class Solution {
     }
 
     public static void removeTheFirstNameDuplicates(Map<String, String> map) {
-        //напишите тут ваш код
-        HashMap<String, String> copy = new HashMap<>(map);
+        HashMap<String, String> copy = new HashMap<String, String>(map);
+        int count = 0;
 
-        for (String value : copy.values()) {
+        Iterator<Map.Entry<String, String>> iterator = copy.entrySet().iterator();
 
-            removeItemFromMapByValue(map, value);
+        while (iterator.hasNext()) {
+            Map.Entry<String, String> pair = iterator.next();
+            String value = pair.getValue();
+
+            for (Map.Entry<String, String> pair1 : copy.entrySet()) {
+                if (pair1.getValue().equals(value)) {
+                    count += 1;
+                    if (count > 1) {
+                        removeItemFromMapByValue(map, value);
+                        }
+                  }
+
+            }
+            count =0;
         }
-        for (Map.Entry<String, String> entry : map.entrySet()) {
-            System.out.println(entry.toString());
+        for (Map.Entry<String, String> stringStringEntry : map.entrySet()) {
+            System.out.println(stringStringEntry);
         }
+
     }
+
 
 
     public static void removeItemFromMapByValue(Map<String, String> map, String value) {
@@ -49,7 +65,6 @@ public class Solution {
 
     public static void main(String[] args) {
         removeTheFirstNameDuplicates(createMap());
-
 
     }
 }
