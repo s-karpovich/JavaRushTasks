@@ -14,8 +14,17 @@ public class Solution {
 
     public static ArrayList<String>[] createList() {
         //напишите тут ваш код
+        ArrayList<String>[] arr = new ArrayList[2];
+        ArrayList<String> list1 = new ArrayList<>();
+        ArrayList<String> list2 = new ArrayList<>();
+        list1.add("One");
+        list1.add("One");
+        list2.add("Two");
+        list2.add("Three");
+        arr[0] = list1;
+        arr[1] = list2;
 
-        return null;
+        return arr;
     }
 
     public static void printList(ArrayList<String>[] arrayOfStringList) {
