@@ -29,6 +29,5 @@ public class Solution {
         public Dog getChild() {
             return new Dog();
         }
-
     }
 }
