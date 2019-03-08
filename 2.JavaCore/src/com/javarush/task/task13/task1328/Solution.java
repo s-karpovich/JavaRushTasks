@@ -19,6 +19,7 @@ public class Solution {
         doMove(amigo, enemy);
     }
 
+
     public static void doMove(Robot robotFirst, Robot robotSecond) {
         BodyPart attacked = robotFirst.attack();
         BodyPart defenced = robotFirst.defense();
