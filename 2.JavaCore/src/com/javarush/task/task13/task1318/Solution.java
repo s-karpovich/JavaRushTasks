@@ -14,6 +14,7 @@ public class Solution {
         String name = bf.readLine();
 
 
+
         InputStream inputStream = new FileInputStream(name);
         Solution myObject = new Solution();
         while (inputStream.available() > 0) {
