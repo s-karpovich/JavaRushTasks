@@ -12,7 +12,9 @@ public class Solution {
 
     public interface Animal {
         Color getColor();
+
     }
+
 
     public static abstract class Fox implements Animal {
         public String getName() {
