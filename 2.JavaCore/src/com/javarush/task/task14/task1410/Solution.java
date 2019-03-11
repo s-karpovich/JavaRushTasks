@@ -22,5 +22,5 @@ public class Solution {
 
     public static Wine getBubblyWine() {
 
-        return  new BublyWine();}
+        return  new BubblyWine();}
 }
