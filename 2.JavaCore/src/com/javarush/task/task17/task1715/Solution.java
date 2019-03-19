@@ -28,7 +28,13 @@ public class Solution {
 
         @Override
         public void run() {
-
+            // Added
+            while (!isStopped) {
+                drugsController.buy(getRandomDrug(), getRandomCount());
+                waitAMoment();
+                waitAMoment();
+                waitAMoment();
+            }
         }
     }
 
@@ -36,7 +42,11 @@ public class Solution {
 
         @Override
         public void run() {
-
+            // Added
+            while (!isStopped) {
+                drugsController.sell(getRandomDrug(), getRandomCount());
+                waitAMoment();
+            }
         }
     }
 
