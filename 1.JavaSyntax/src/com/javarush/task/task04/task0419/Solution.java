@@ -15,14 +15,23 @@ public class Solution {
         int c = Integer.parseInt(bf.readLine());
         int d = Integer.parseInt(bf.readLine());
 
-       if (a>=b && a>=c&& a>=d) {
-           System.out.println(a);
-       } else if (b>c && b>d){
-           System.out.println(b);
-       } else if (c>d){
-           System.out.println(c);
-       } else {
-           System.out.println(d);
-       }
+        if (min(a,b)<min(c,d)) { System.out.println(min(a,b));}
+        else  {System.out.println(min(c,d));}
+    }
+
+    private static int min(int first, int second) {
+        if (first < second) { return first; }
+        else { return second; }
     }
 }
+
+
+//       if (a>=b && a>=c&& a>=d) {
+//               System.out.println(a);
+//               } else if (b>c && b>d){
+//               System.out.println(b);
+//               } else if (c>d){
+//               System.out.println(c);
+//               } else {
+//               System.out.println(d);
+//               }

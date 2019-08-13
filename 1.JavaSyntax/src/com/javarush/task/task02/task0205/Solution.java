@@ -10,6 +10,5 @@ public class Solution {
 
     public static void hackSalary(int a) {
         // напишите тут ваш код
-        System.out.println(a+100);
     }
 }

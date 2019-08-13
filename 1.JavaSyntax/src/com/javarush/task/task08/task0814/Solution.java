@@ -18,18 +18,18 @@ public class Solution {
         // напишите тут ваш код
 
         // Удаление через removeIf и лямбды
-         set.removeIf(elem -> elem > 10);
+         //set.removeIf(elem -> elem > 10);
 
-        // Удаление через итератор
-//        Iterator<Integer> it = set.iterator();
-//        while (it.hasNext()){
-//        if (it.next()>10) it.remove();
-//        }
+         //Удаление через итератор
+        Iterator<Integer> it = set.iterator();
+        while (it.hasNext()){
+        if (it.next()>10) it.remove();
+        }
 
    return set;
     }
 
     public static void main(String[] args) {
-        //System.out.println(removeAllNumbersGreaterThan10(createSet()).toString());
+        System.out.println(removeAllNumbersGreaterThan10(createSet()).toString());
     }
 }

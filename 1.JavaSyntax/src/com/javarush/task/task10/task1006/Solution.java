@@ -9,7 +9,7 @@ public class Solution {
         double d = (short) 2.50256e2d;
         //System.out.println(d);
         char c = (short) 'd';
-        //System.out.println(c);
+        System.out.println(c);
         short s = (short) 2.22;
         //System.out.println(s);
         int i = 150000;

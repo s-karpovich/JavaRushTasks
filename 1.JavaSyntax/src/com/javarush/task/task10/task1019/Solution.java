@@ -11,18 +11,19 @@ import java.util.Map;
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        HashMap<String, Integer> map = new HashMap<>();
+        Map<Integer, String> map = new HashMap<>();
+
 
         while (true) {
             String idS = reader.readLine();
-            if (idS.isEmpty()) break;
-
-            int id = Integer.parseInt(idS);
             String name = reader.readLine();
-            map.put(name, id);
+
+            if (name.isEmpty() || idS.isEmpty()) {break;}
+            map.put(Integer.parseInt(idS), name);
         }
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            System.out.println(entry.getValue() + " " + entry.getKey());
+
+        for(Map.Entry<Integer, String> pair: map.entrySet()) {
+            System.out.println(pair.getKey() + " " + pair.getValue());
         }
     }
 }

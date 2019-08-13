@@ -16,28 +16,29 @@ public class Solution {
     }
 
     public static class Cat extends Pet {
-        private String name = "Кот";
 
         @Override
         public String getName() {
-            return name;
+            return null;
         }
 
         @Override
         public Pet getChild() {
-            return new Cat();
+            return null;
         }
     }
 
-    public static class Dog extends Pet {
-        private String name = "Собака";
+    public static class Dog extends Pet{
+
         @Override
         public String getName() {
-            return name;
+            return null;
         }
+
         @Override
         public Pet getChild() {
-            return new Dog();
+            return null;
         }
     }
+
 }

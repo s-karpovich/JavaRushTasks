@@ -16,7 +16,7 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         ArrayList<String> words = new ArrayList<String>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 4; i++) {
             words.add(reader.readLine());
         }
 
@@ -30,17 +30,18 @@ public class Solution {
     public static Map<String, Integer> countWords(ArrayList<String> list) {
         HashMap<String, Integer> result = new HashMap<String, Integer>();
         //напишите тут ваш код
-        for (String s : list) {
-            result.put(s, Collections.frequency(list, s));
-        }
-        // Решение через hashMap
+
+        // Решение через Collections
 //        for (String s : list) {
-//            if (result.containsKey(s)) result.put(s,result.get(s)+1);
-//            else result.put(s,1);
+//            result.put(s, Collections.frequency(list, s));
 //        }
 
+         //Решение через hashMap
+        for (String s : list) {
+            if (result.containsKey(s)) result.put(s,result.get(s)+1);
+            else result.put(s,1);
+        }
         return result;
     }
-
 }
 

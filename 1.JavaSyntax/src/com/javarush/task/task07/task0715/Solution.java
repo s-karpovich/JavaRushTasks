@@ -16,7 +16,7 @@ public class Solution {
         list.add("мыла");
         list.add("раму");
 
-        for (int i = 0; i <list.size() ; i=i+2) {
+        for (int i = 0; i <list.size() ; i+=2) {
             list.add(i+1, "именно");
         }
         for (String s: list) {

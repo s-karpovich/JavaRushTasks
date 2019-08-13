@@ -14,9 +14,9 @@ public class Solution {
         int b = Integer.parseInt(bf.readLine());
         int c = Integer.parseInt(bf.readLine());
 
-        if (a == b && b == c) System.out.println(a + " " + b + " " + c);
-        else if (a == b) System.out.println(a + " " + b);
-        else if (a == c) System.out.println(a + " " + c);
-        else if (b == c) System.out.println(b + " " + c);
+        if (a==b && b==c) { System.out.println(a+ " " +b + " "+c);}
+        else if (a==b) { System.out.println(a+ " " +b );}
+        else if (b==c) { System.out.println(b+ " " +c );}
+        else if (a==c) { System.out.println(a+ " " +c );}
+        }
     }
-}

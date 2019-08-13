@@ -13,6 +13,4 @@ public class Solution {
     public interface CanFly{void landing();}
     public interface CanRun{void forsage();}
     public interface CanSwim{void dive();}
-
-
 }

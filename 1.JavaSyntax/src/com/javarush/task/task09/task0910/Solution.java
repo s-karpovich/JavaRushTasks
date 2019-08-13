@@ -7,15 +7,17 @@ import java.util.ArrayList;
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
         //напишите тут ваш код
 try {
         ArrayList<String> list = new ArrayList<String>();
         String s = list.get(18);
+    System.out.println("after try");
 }
         //напишите тут ваш код
         catch (IndexOutOfBoundsException e){
             System.out.println(e.toString());
         }
+        System.out.println("after catch");
     }
 }

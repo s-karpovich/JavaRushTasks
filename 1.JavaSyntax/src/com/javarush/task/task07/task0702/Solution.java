@@ -9,15 +9,15 @@ import java.io.InputStreamReader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-        String[] arr = new String[10];
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i <8 ; i++) {
-            arr[i] = bf.readLine();
-        }
-
-        for (int i = arr.length-1; i >=0 ; i--) {
-            System.out.println(arr[i]);
-        }
+    //напишите тут ваш код
+    String[] arr = new String[10];
+    BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+    for (int i = 0; i <8 ; i++) {
+        arr[i] = bf.readLine();
     }
+
+    for (int i = arr.length-1; i >=0 ; i--) {
+        System.out.println(arr[i]);
+    }
+}
 }

@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 */
 
 public class Solution {
-    public static int max = 100;
+    public static int max;
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -21,5 +21,4 @@ public class Solution {
 
         System.out.println(maxText + max);
     }
-
 }
